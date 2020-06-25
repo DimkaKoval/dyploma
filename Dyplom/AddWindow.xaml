@@ -1,0 +1,56 @@
+﻿<Window x:Class="Dyplom.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dyplom"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="451.5" Width="376" FontFamily="Times New Roman" FontSize="14">
+    <Grid Margin="0,0,2,2">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFF4FF0B" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <GroupBox x:Name="PrivateBox" Header="Приватний" HorizontalAlignment="Left" Margin="9,74,0,10" Width="350" Foreground="SeaGreen">
+            <GroupBox.BindingGroup>
+                <BindingGroup/>
+            </GroupBox.BindingGroup>
+        </GroupBox>
+        <Button x:Name="Add" Content="Додати" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" Width="110" Height="43" Click="Add_Click" FontFamily="Times New Roman" FontSize="18">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="SeaGreen" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="CloseButtom" Content="Відмінити" HorizontalAlignment="Right" Margin="0,10,50,0" VerticalAlignment="Top" Width="110" Height="43" Click="Close_Click" FontFamily="Times New Roman" FontSize="18">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="SeaGreen" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="SecondName" Content="Прізвище" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,107,0,0" RenderTransformOrigin="0.254,-0.462" FontFamily="Times New Roman" FontSize="14"/>
+        <Label x:Name="SurName" Content="По батькові" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.895,6.115" Margin="27,162,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <Label x:Name="City" Content="Місто" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,244,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <Label x:Name="Street" Content="Вулиця" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,272,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <Label x:Name="NumberBuild" Content="№ Будинку" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,300,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <Label x:Name="NameBox" Content="Ім'я" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,133,0,0" RenderTransformOrigin="3.467,-0.731" FontFamily="Times New Roman" FontSize="14"/>
+        <Label x:Name="DateOfInstalling" Content="Дата встановлення" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,357,0,0" RenderTransformOrigin="0.456,3.115" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="SecondNameBoxP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,110,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="SurNameTextP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,165,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="TownOrder" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,247,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="StreetOrder" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,275,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="NumberBuildOrder" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,303,0,0" TextChanged="NumberBuildOrder_TextChanged" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="TYOHBoxP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,331,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <Label x:Name="TypeOfHeating" Content="Тип опалення" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,328,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <GroupBox x:Name="CoopBox" Header="Корпоративний" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,74,0,0" Height="335" Width="584" Visibility="Collapsed"/>
+        <Label x:Name="PhoenePr" Content="Номер телефону" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,188,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <Label x:Name="MailPr" Content="E-Mail@" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,216,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="PhoneBoxPr" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,191,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="MailBoxPr" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,219,0,0" FontFamily="Times New Roman" FontSize="14"/>
+        <DatePicker x:Name="DateOrder" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="170,359,0,0" Width="120" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="NameTextP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="170,138,0,0" FontFamily="Times New Roman" FontSize="14"/>
+    </Grid>
+</Window>

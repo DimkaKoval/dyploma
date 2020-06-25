@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddCoop.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ChangeCorp.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ChangeOrder.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CheckPr.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SearchCoop.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SearchPrvt.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TelegramD\TelgramBot.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddCoop.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ChangeCorp.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ChangeOrder.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CheckPr.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SearchCoop.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SearchPrvt.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TelegramD\TelgramBot.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

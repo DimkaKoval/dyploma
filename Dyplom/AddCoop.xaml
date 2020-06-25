@@ -1,0 +1,46 @@
+﻿<Window x:Class="Dyplom.AddCoop"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dyplom"
+        mc:Ignorable="d"
+        Title="AddCoop" Height="395.3" Width="376" FontFamily="Times New Roman" FontSize="14">
+    <Grid Background="#FFF4FF0B">
+        <GroupBox x:Name="CoopBox" Header="Корпоративний" HorizontalAlignment="Left" Margin="1,74,0,0" Width="368" Foreground="SeaGreen" Background="#FFF4FF0B">
+            <GroupBox.BindingGroup>
+                <BindingGroup/>
+            </GroupBox.BindingGroup>
+        </GroupBox>
+        <Button x:Name="Add" Content="Додати" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" Width="110" Height="43" Click="Add_Click" FontSize="18">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="SeaGreen" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="CloseButtom" Content="Відмінити" HorizontalAlignment="Right" Margin="0,10,50,0" VerticalAlignment="Top" Width="110" Height="43" Click="Close_Click" FontSize="18">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="SeaGreen" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="City" Content="Місто" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,131,0,0"/>
+        <Label x:Name="Street" Content="Вулиця" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,159,0,0"/>
+        <Label x:Name="NumberBuild" Content="№ Будинку" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,187,0,0"/>
+        <Label x:Name="NameBox" Content="Назва закладу" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,103,0,0" RenderTransformOrigin="3.467,-0.731"/>
+        <Label x:Name="DateOfInstalling" Content="Дата встановлення" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,300,0,0" RenderTransformOrigin="0.456,3.115"/>
+        <TextBox x:Name="TownBoxC" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,134,0,0"/>
+        <TextBox x:Name="StreetBoxC" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,162,0,0"/>
+        <TextBox x:Name="NumberBuildBoxC" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,190,0,0"/>
+        <TextBox x:Name="TYOHBoxC" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,218,0,0"/>
+        <Label x:Name="TypeOfHeating" Content="Тип опалення" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,215,0,0"/>
+        <DatePicker x:Name="DateCoop" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="170,302,0,0" Width="120"/>
+        <TextBox x:Name="NameBoxC" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,106,0,0"/>
+        <Label x:Name="NumberPhone" Content="Номер телефону" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,243,0,0"/>
+        <Label x:Name="Mail" Content="E-Mail@" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,271,0,0"/>
+        <TextBox x:Name="MailBoxC" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,274,0,0" TextChanged="textBox_TextChanged"/>
+        <TextBox x:Name="PhoneBoxC" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="170,246,0,0"/>
+    </Grid>
+</Window>
